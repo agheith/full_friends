@@ -1,0 +1,32 @@
+<div ng-controller="mainController">
+
+      <div class="row">
+          <table class="col s6 centered highlight">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Show</th>
+                      <th>Update</th>
+                      <th>Delete</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr ng-repeat="friend in friends | filter: search">
+                      <td>{{friend.first_name}} {{friend.last_name}}</td>
+                      <td><a href="#!/show/{{friend._id}}">Show</a></td>
+                      <td><a href="#!/edit/{{friend._id}}">Update</a></td>
+                      <td><a href="#!">Delete</a></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="row">
+              <form class="col s4">
+                  <p><small>Search by Birthday</small></p>
+                  <input type="text" placeholder="MM/DD/YYYY" ng-model="search.birthday">
+              </form>
+          </div>
+      </div>
+</div>
+
+<!-- <input type="date" ng-model="item.dateAsString" value="{{ item.dateAsString }}" pattern="dd/MM/YYYY"/> -->
+<!-- how can i disappear the new frined link? -->

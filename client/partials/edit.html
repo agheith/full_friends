@@ -1,0 +1,12 @@
+<div ng-controller = "editController">
+    <h3>This is edit.html</h3>
+    <div class="row">
+        <form class="col s6" ng-submit="update()">
+
+            First Name:<input type="text" ng-model="updateFriend.first_name" ng-value="friend.first_name"><br>
+            Last Name:<input type="text" ng-model="updateFriend.last_name"ng-value="friend.last_name"><br>
+            <!-- Birthday:<input type="date" ng-model="friend.birthday" ng-value="friend.birthday"><br> -->
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</div>

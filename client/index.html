@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Awsome Friends</title>
+        <script src="angular/angular.js" charset="utf-8"></script>
+        <script src="angular-route/angular-route.js" charset="utf-8"></script>
+        <script src="assets/app.js" charset="utf-8"></script>
+        <script src="controllers/editController.js" charset="utf-8"></script>
+        <script src="controllers/newController.js" charset="utf-8"></script>
+        <script src="controllers/showController.js" charset="utf-8"></script>
+        <script src="controllers/mainController.js" charset="utf-8"></script>
+        <script src="factories/friendsFactory.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    </head>
+    <body>
+      <div class="center">
+          <h4>Awsome Friends</h4>
+          <a href="#!/new">New Friend</a>
+      </div>
+          <div ng-view=""></div>
+    </body>
+</html>
